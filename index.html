@@ -245,7 +245,7 @@ h1,h2,h3{ font-weight:400; margin:0; letter-spacing:-.005em; }
   background:linear-gradient(rgba(4,7,10,.55), rgba(4,7,10,.94) 40%, rgba(4,7,10,.98));
 }
 .sec-head{ display:flex; align-items:baseline; gap:16px; margin-bottom:clamp(30px,5vh,66px); }
-.sec-head .k{ font-size:10px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); }
+.sec-head .k{ margin:0; font-size:10px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); }
 .sec-head .k b{ color:var(--vermilion); font-weight:500; }
 .rule{ flex:1 1 auto; height:1px; background:var(--line-soft); }
 
@@ -929,11 +929,13 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
 
 <div class="page" id="top">
 
+<main>
+
 <!-- ============================================================ hero -->
-<section class="hero" id="hero" data-cam="0">
+<section class="hero" id="hero" data-cam="0" aria-labelledby="hero-title">
   <div class="hero-top">
     <div class="eyebrow" data-rv="fade"><span class="dot"></span> Chapter 00 — The Hidden Gate</div>
-    <h1 class="display h-hero">
+    <h1 class="display h-hero" id="hero-title">
       <span class="mask-line"><span>Where stillness</span></span>
       <span class="mask-line"><span>reveals the</span></span>
       <span class="mask-line"><span>unseen.</span></span>
@@ -974,7 +976,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
 </section>
 
 <!-- ============================================================ chapter I -->
-<section class="sec" id="gate" data-cam="1">
+<section class="sec" id="gate" data-cam="1" aria-labelledby="gate-title">
   <!-- foreground: the wall arrives first, the pine at the edge, the grass last -->
   <div class="fg" data-fg="gate" aria-hidden="true">
     <span class="fg-el fg-wall" data-fg-in="left">
@@ -991,7 +993,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
     <span class="k"><b>01</b> — The Sanmon</span><span class="rule"></span><span class="k jp">山門</span>
   </div>
   <div class="gate-grid">
-    <h2 class="display h-sec" data-rv="up">Charred cypress, worn stone, one gate left open.</h2>
+    <h2 class="display h-sec" id="gate-title" data-rv="up">Charred cypress, worn stone, one gate left open.</h2>
     <div class="gate-copy">
       <p class="lead" data-rv="up">Kage begins where the city stops: a mountain gate of cedar burned black,
         standing in its own weather. The soot is not decoration. It is how a board is taught to survive a
@@ -1015,7 +1017,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
 </section>
 
 <!-- ============================================================ chapter II -->
-<section class="sec" id="pathways" data-cam="2">
+<section class="sec" id="pathways" data-cam="2" aria-labelledby="pathways-title">
   <!-- foreground: the garden frames the mosaic from the sides and the two lower corners -->
   <div class="fg" data-fg="pathways" aria-hidden="true">
     <span class="fg-el fg-sakura fg-el--sway" data-fg-in="left">
@@ -1032,7 +1034,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
     </span>
   </div>
   <div class="sec-head" data-rv="fade">
-    <span class="k"><b>02</b> — Still Gardens</span><span class="rule"></span><span class="k jp">庭園</span>
+    <h2 class="k" id="pathways-title"><b>02</b> — Still Gardens</h2><span class="rule"></span><span class="k jp">庭園</span>
   </div>
   <div class="cards" id="cards">
     <article class="card" data-rv="up" data-view="0" data-cursor>
@@ -1063,7 +1065,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
 </section>
 
 <!-- ============================================================ chapter III -->
-<section class="sec" id="lessons" data-cam="3">
+<section class="sec" id="lessons" data-cam="3" aria-labelledby="lessons-title">
   <!-- foreground: a low periphery for the atlas — wall fragment, basalt, one stand of grass -->
   <div class="fg" data-fg="lessons" aria-hidden="true">
     <span class="fg-el fg-wall fg-el--flip" data-fg-in="right">
@@ -1080,7 +1082,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
     <span class="k"><b>03</b> — Sacred Craft</span><span class="rule"></span><span class="k jp">手業</span>
   </div>
   <div class="cur-head">
-    <h2 class="display h-sec" data-rv="up">Five chapters. Ninety minutes. One quiet mind.</h2>
+    <h2 class="display h-sec" id="lessons-title" data-rv="up">Five chapters. Ninety minutes. One quiet mind.</h2>
     <p class="body-lg" data-rv="up">Each chapter is a walk, not a lecture. You arrive at the gate, climb the
       steps, sit with the lantern, and leave with one thing worth keeping.</p>
   </div>
@@ -1119,7 +1121,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
 </section>
 
 <!-- ============================================================ chapter IV -->
-<section class="sec fin" id="eternity" data-cam="4">
+<section class="sec fin" id="eternity" data-cam="4" aria-labelledby="eternity-title">
   <!-- foreground: the closing horizon: hill, ruins, grass, and the last branch -->
   <div class="fg" data-fg="eternity" aria-hidden="true">
     <span class="fg-el fg-hill" data-fg-in="up">
@@ -1136,7 +1138,7 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
     </span>
   </div>
   <div class="eyebrow" data-rv="fade">Chapter 04 — Afterlight</div>
-  <h2 class="display" data-rv="up">Afterlight</h2>
+  <h2 class="display" id="eternity-title" data-rv="up">Afterlight</h2>
   <p class="body-lg" data-rv="up">The gate does not close behind you. Take the walk whenever the noise
     gets loud — it is always the same path, and never the same light.</p>
   <a class="cta" href="#top" data-rv="fade" data-cursor>
@@ -1144,6 +1146,8 @@ body[data-layout-footer="b"] .foot-base span:last-child{ text-align:right; }
     <svg viewBox="0 0 14 14" fill="none" width="13" height="13"><path d="M3 11 11 3M5 3h6v6" stroke="#dfe7e0" stroke-width="1.3"/></svg>
   </a>
 </section>
+
+</main>
 
 <!-- ============================================================ footer -->
 <footer class="foot" data-cam="5">
